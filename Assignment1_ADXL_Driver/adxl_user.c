@@ -17,9 +17,7 @@ int main(int argc, char *argv[])
 		{
 			case 'x':
 			{
-				fd1=open("/dev/adxl_x", 0);
-				printf("fdx = %d\n", fd1);
-				
+				fd1=open("/dev/adxl_x", 0);				
 				if(fd1<0)
 				{
 					printf("adxl_x Open Failed\n");
@@ -38,9 +36,7 @@ int main(int argc, char *argv[])
 				
 			case 'y':
 			{
-				fd2=open("/dev/adxl_y", 0);
-				printf("fdy = %d\n", fd2);
-				
+				fd2=open("/dev/adxl_y", 0);				
 				if(fd2<0)
 				{
 					printf("adxl_y Open Failed\n");
@@ -59,9 +55,7 @@ int main(int argc, char *argv[])
 			
 			case 'z':
 			{
-				fd3=open("/dev/adxl_z", 0);
-				printf("fdz = %d\n", fd3);
-				
+				fd3=open("/dev/adxl_z", 0);				
 				if(fd3<0)
 				{
 					printf("adxl_z Open Failed\n");
