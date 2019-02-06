@@ -9,7 +9,7 @@ $ sudo insmod adxldriver.ko
 ```
 2. Userspace program:
 ```
-$ gcc adxl_user -o adxl
+$ make user
 ```
 
 Usage:
