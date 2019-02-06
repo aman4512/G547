@@ -6,6 +6,7 @@ all:
 
 clean:
 	make -C /lib/modules/$(shell uname -r)/build M=$(PWD) clean
+	rm adxl
 
 user:
 	gcc adxl_user.c -o adxl
