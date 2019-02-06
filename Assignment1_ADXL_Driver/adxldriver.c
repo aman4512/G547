@@ -143,9 +143,8 @@ static ssize_t adxl_read(struct file *filep, char __user *buffer, size_t len, lo
 	p = adxl_output();
 
 	for (i=0; i<3; i++)
-	{
 		adxl_out[i] = *(p+i);
-	}
+		
 	error_count = 1;
 
 	adxl_x = adxl_out[0];
@@ -153,13 +152,13 @@ static ssize_t adxl_read(struct file *filep, char __user *buffer, size_t len, lo
 	adxl_z = adxl_out[2];
 	
 	size_of_message = sizeof(adxl_out);
-	// copy_to_user has the format ( * to, *from, size) and returns 0 on success
+
 	error_count = copy_to_user(buffer, &adxl_out, size_of_message);
 
 	if (error_count==0)
-	{            // if true then have success
+	{
 		printk(KERN_INFO "%d %d %d readings\n", adxl_x, adxl_y, adxl_z);
-		//return (size_of_message=0);  // clear the position to the start and return 0
+		return (size_of_message=0);
    	}
 	printk(KERN_INFO "adxl: read()\n");
 	return 0;
