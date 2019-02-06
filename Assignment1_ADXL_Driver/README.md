@@ -1,15 +1,27 @@
 Assignment 1
 
+Building and loading:
+
+1. Driver
+```
+$ make all
+$ sudo insmod adxldriver.ko
+```
+2. Userspace program:
+```
+$ gcc adxl_user -o adxl
+```
+
 Usage:
 
 The module gives values for 3 accelerometer axes. The required axis can be passed as a command line parameter.
 Example:
 
-`sudo ./adxl.o -x` (Replace `adxl.o` with name of object file generated)
+`sudo ./adxl -x` (Replace `adxl` with name of object file generated)
 
 will give x axis value output.
 
-`sudo ./adxl.o -xyz`
+`sudo ./adxl -xyz`
 
 will give values for all three axes.
 Similarly any two axes acan also be queried.
