@@ -24,4 +24,4 @@ will give x axis value output.
 `sudo ./adxl -xyz`
 
 will give values for all three axes.
-Similarly any two axes acan also be queried.
+Similarly any two axes can also be queried.
