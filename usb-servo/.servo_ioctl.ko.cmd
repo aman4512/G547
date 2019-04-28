@@ -1,0 +1,1 @@
+cmd_/home/aman/g547/project/usb-servo.kp/servo_ioctl.ko := ld -r -m elf_x86_64  -z max-page-size=0x200000 -T ./scripts/module-common.lds  --build-id  -o /home/aman/g547/project/usb-servo.kp/servo_ioctl.ko /home/aman/g547/project/usb-servo.kp/servo_ioctl.o /home/aman/g547/project/usb-servo.kp/servo_ioctl.mod.o ;  true
