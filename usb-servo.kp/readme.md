@@ -8,10 +8,15 @@ Directory tree:
 
 usb-servo
 |
+
 |------firmware
+
 |------commandline-ioctl
+
 |------commandline-libusb
+
 |------common
+
 
 Schematic:
  
