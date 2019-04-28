@@ -5,9 +5,6 @@ The main aim of this project is to control servo motor connected to ATmega8 usin
 
 Two implementations were tested. One using libusb and another using ioctl.
 
-Schematic:
-
-
 Prototype
 
 Compiling & Uploading the firmware:
