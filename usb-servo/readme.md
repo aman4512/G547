@@ -1,3 +1,5 @@
+Link to repo: https://github.com/h20180120/G547/tree/master/usb-servo
+
 Servo Motor Control using ATmega8A
 
 Summary:
